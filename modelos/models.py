@@ -10,7 +10,7 @@ RANDOM_STATE = 42
 def construir_pipeline_modelo_regressao(
     regressor, preprocessor=None, target_transformer=None
 ):
-    if preprocessor is not None:é o modelo x515j
+    if preprocessor is not None:
         pipeline = Pipeline([("preprocessor", preprocessor), ("reg", regressor)])
     else:
         pipeline = Pipeline([("reg", regressor)])
